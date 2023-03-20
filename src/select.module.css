@@ -42,3 +42,44 @@
   width: .05em;
 }
 
+.caret {
+  border: .25em solid transparent;
+  border-top-color: #777 ;
+  translate: 0 25%  ;
+}
+
+.options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* display: none; */
+  max-height: 15em;
+  overflow: auto;
+  border: .05em solid #777;
+  border-radius: .25em;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25em);
+  background-color: white;
+  z-index: 100;
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em .5em;
+  cursor: pointer;
+}
+
+.option.highlighted {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}
+
+.option.selected {
+  background-color: hsl(200, 100%, 70%);
+}
+
